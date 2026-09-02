@@ -25,11 +25,11 @@ class	Contact
 		std::string	darkestSecret;
 
 	public:
-		void	SetFirstName(const std::string& firstName);
-		void	SetLastName(const std::string& lastName);
-		void	SetNickName(const std::string& nickName);
-		void	SetPhoneNumber(const std::string& phoneNumber);
-		void	SetDarkestSecret(const std::string& darkestSecter);
+		void		SetFirstName(const std::string& firstName);
+		void		SetLastName(const std::string& lastName);
+		void		SetNickName(const std::string& nickName);
+		void		SetPhoneNumber(const std::string& phoneNumber);
+		void		SetDarkestSecret(const std::string& darkestSecter);
 		std::string	GetFirstName() const;
 		std::string	GetLastName() const;
 		std::string	GetNickName() const;

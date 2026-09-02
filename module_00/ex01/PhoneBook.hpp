@@ -13,4 +13,17 @@
 #ifndef PHONEBOOK_HPP
 #define PHONEBOOK_HPP
 
+#include <iostream>
+#include "Contact.hpp"
+
+class PhoneBook
+{
+	private:
+		Contact	contactInfo[8];
+
+	public:
+		Contact	AddContact();
+		Contact	SearchContact();
+};
+
 #endif

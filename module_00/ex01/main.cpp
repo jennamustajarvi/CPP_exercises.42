@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #include "PhoneBook.hpp"
-#include <iostream>
 
 int	main()
 {
@@ -20,8 +19,9 @@ int	main()
 
 		while (1)
 	{
-		std::cout << "Choose one command:\nADD = add a contact\nSEARCH = search contact from PhoneBook\nEXIT = exit the program\nand type it here: ";
-		std::cin >> command;
+		std::cout << "\nADD = add new contact\nSEARCH = search existing contact from PhoneBook\nEXIT = exit the program\n\nwrite your command here: ";
+		if (!std::getline(std::cin, command))
+			break ;
 		if (command == "ADD")
 			phoneBook.AddContact();
 		else if (command == "SEARCH")
