@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jemustaj <jemustaj@student.42Porto.com>    +#+  +:+       +#+        */
+/*   By: jennamustajarvi <jennamustajarvi@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/27 14:30:47 by jemustaj          #+#    #+#             */
-/*   Updated: 2026/08/27 14:47:08 by jemustaj         ###   ########.fr       */
+/*   Updated: 2026/09/03 13:08:01 by jennamustaj      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,13 +23,13 @@ int	main()
 		if (!std::getline(std::cin, command))
 			break ;
 		if (command == "ADD")
-			phoneBook.AddContact();
+			phoneBook.addContact();
 		else if (command == "SEARCH")
-			phoneBook.SearchContact();
+			phoneBook.searchContact();
 		else if (command == "EXIT")
 			break ;
 		else
-			std::cout << "Unknown command" << std::endl;
+			std::cout << "Unknown command\n";
 	}
 	return (0);
 }

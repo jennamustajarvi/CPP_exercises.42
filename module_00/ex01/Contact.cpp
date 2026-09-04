@@ -20,6 +20,7 @@ void		SetFirstName(const std::string& firstName);
 
 }
 
+void		SetFirstName(const std::string& lastName);
 void		SetLastName(const std::string& lastName);
 void		SetNickName(const std::string& nickName);
 void		SetPhoneNumber(const std::string& phoneNumber);

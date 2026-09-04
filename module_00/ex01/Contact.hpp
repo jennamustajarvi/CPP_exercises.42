@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Contact.hpp                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jemustaj <jemustaj@student.42Porto.com>    +#+  +:+       +#+        */
+/*   By: jennamustajarvi <jennamustajarvi@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/27 14:47:38 by jemustaj          #+#    #+#             */
-/*   Updated: 2026/08/27 18:33:31 by jemustaj         ###   ########.fr       */
+/*   Updated: 2026/09/03 13:12:06 by jennamustaj      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,25 +16,25 @@
 #include <string>
 
 class	Contact
-{
-	private:
-		std::string	firstName;
-		std::string	lastName;
-		std::string	nickName;
-		std::string	phoneNumber;
-		std::string	darkestSecret;
-
+{	
 	public:
-		void		SetFirstName(const std::string& firstName);
-		void		SetLastName(const std::string& lastName);
-		void		SetNickName(const std::string& nickName);
-		void		SetPhoneNumber(const std::string& phoneNumber);
-		void		SetDarkestSecret(const std::string& darkestSecter);
-		std::string	GetFirstName() const;
-		std::string	GetLastName() const;
-		std::string	GetNickName() const;
-		std::string	GetPhoneNumber() const;
-		std::string	GetDarkestSecret() const;
+		void		setFirstName(const std::string& firstName);
+		void		setLastName(const std::string& lastName);
+		void		setNickName(const std::string& nickName);
+		void		setPhoneNumber(const std::string& phoneNumber);
+		void		setDarkestSecret(const std::string& darkestSecter);
+		std::string	getFirstName() const;
+		std::string	getLastName() const;
+		std::string	getNickName() const;
+		std::string	getPhoneNumber() const;
+		std::string	getDarkestSecret() const;
+		
+	private:
+		std::string	first_name;
+		std::string	last_name;
+		std::string	nick_name;
+		std::string	phone_number;
+		std::string	darkest_secret;
 };
 
 #endif

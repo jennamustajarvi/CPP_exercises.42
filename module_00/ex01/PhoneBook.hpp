@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   PhoneBook.hpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jemustaj <jemustaj@student.42Porto.com>    +#+  +:+       +#+        */
+/*   By: jennamustajarvi <jennamustajarvi@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/27 14:47:19 by jemustaj          #+#    #+#             */
-/*   Updated: 2026/08/27 14:47:20 by jemustaj         ###   ########.fr       */
+/*   Updated: 2026/09/03 13:12:54 by jennamustaj      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,12 +19,15 @@
 
 class PhoneBook
 {
-	private:
-		Contact	contactInfo[8];
-
 	public:
-		Contact	AddContact();
-		Contact	SearchContact();
+		PhoneBook();
+		void	addContact();
+		void	searchContact() const;
+
+	private:
+		int		contact_index;
+		int		contact_counter;
+		Contact	contacts[8];
 };
 
 #endif
