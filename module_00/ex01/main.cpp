@@ -29,7 +29,8 @@ int	main()
 		else if (command == "EXIT")
 			break ;
 		else
-			std::cout << "Unknown command\n";
+			std::cout << "\n >>> Unknown command, write ADD SEARCH or EXIT <<< \n";
 	}
 	return (0);
 }
+//NOTE: todo next is to make sure error and guidance messages are consistent format and clear. also check if I could input colors

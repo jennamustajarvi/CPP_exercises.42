@@ -19,15 +19,20 @@ RM = rm -rdf
 
 SRC = main.cpp Contact.cpp PhoneBook.cpp
 
-OBJ = $(SRC:.cpp=.o)
+OBJ_DIR = build
+OBJ = $(addprefix $(OBJ_DIR)/, $(SRC:.cpp=.o))
 
 all: $(NAME)
 
 $(NAME): $(OBJ)
 	$(CPP) $(CPP_FLAGS) $(OBJ) -o $(NAME)
 
+$(OBJ_DIR)/%.o: %.cpp
+	@mkdir -p $(OBJ_DIR)
+	$(CPP) $(CPP_FLAGS) -c $< -o $@
+
 clean:
-	$(RM) $(OBJ)
+	$(RM) $(OBJ_DIR)
 
 fclean: clean
 	$(RM) $(NAME)
