@@ -21,7 +21,7 @@ int	main()
 
 		while (1)
 	{
-		std::cout << "\nADD = add new contact\nSEARCH = search existing contact from PhoneBook\nEXIT = exit the program\n\n   write your command here: ";
+		std::cout << "\nADD = add new contact\nSEARCH = search existing contact from PhoneBook\nEXIT = exit the program\n\n   write your command here: \n";
 		if (!std::getline(std::cin, command))
 			break ;
 		if (command == "ADD")

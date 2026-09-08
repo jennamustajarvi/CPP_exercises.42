@@ -25,34 +25,34 @@ PhoneBook::PhoneBook()
 void	PhoneBook::addContact()
 {
 	std::string	first_name, last_name, nick_name, phone_nbr, darkest_secret;
-	std::cout << "\nFirst name: ";
+	std::cout << "\nFirst name: \n";
 	if (!std::getline(std::cin, first_name) || first_name.empty())
 	{
-		std::cout << " >>> Error: empty fields are not allowed <<< ";
+		std::cout << " >>> Error: empty fields are not allowed <<< \n";
 		return ;
 	}
-	std::cout << "Last name: ";
+	std::cout << "Last name: \n";
 	if (!std::getline(std::cin, last_name) || last_name.empty())
 	{
-		std::cout << " >>> Error: empty fields are not allowed <<< ";
+		std::cout << " >>> Error: empty fields are not allowed <<< \n";
 		return ;
 	}
-	std::cout << "Nickname: ";
+	std::cout << "Nickname: \n";
 	if (!std::getline(std::cin, nick_name) || nick_name.empty())
 	{
-		std::cout << " >>> Error: empty fields are not allowed <<< ";
+		std::cout << " >>> Error: empty fields are not allowed <<< \n";
 		return ;
 	}
-	std::cout << "Phone number: ";
+	std::cout << "Phone number: \n";
 	if (!std::getline(std::cin, phone_nbr) || phone_nbr.empty())
 	{
-		std::cout << " >>> Error: empty fields are not allowed <<< ";
+		std::cout << " >>> Error: empty fields are not allowed <<< \n";
 		return ;
 	}
-	std::cout << "Darkest secret: ";
+	std::cout << "Darkest secret: \n";
 	if (!std::getline(std::cin, darkest_secret) || darkest_secret.empty())
 	{
-		std::cout << " >>> Error: empty fields are not allowed <<< ";
+		std::cout << " >>> Error: empty fields are not allowed <<< \n";
 	return ;
 	}
 
@@ -96,7 +96,7 @@ void	PhoneBook::searchContact() const
 	}
 
 	std::string	input;
-	std::cout << "\n   enter index: ";
+	std::cout << "\n   enter index: \n";
 	if (!getline(std::cin, input) || input.empty())
 	{
 		std::cout << "\n >>> Error: no index sent <<< \n";
