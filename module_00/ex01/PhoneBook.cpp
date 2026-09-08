@@ -11,6 +11,10 @@
 /* ************************************************************************** */
 
 #include "PhoneBook.hpp"
+#include <string>
+#include <sstream>
+#include <iostream>
+#include <iomanip>
 		
 PhoneBook::PhoneBook()
 {
@@ -21,34 +25,34 @@ PhoneBook::PhoneBook()
 void	PhoneBook::addContact()
 {
 	std::string	first_name, last_name, nick_name, phone_nbr, darkest_secret;
-	std::cout << "First name: ";
+	std::cout << "\nFirst name: ";
 	if (!std::getline(std::cin, first_name) || first_name.empty())
 	{
-		std::cout << "Error: empty fields are not allowed";
+		std::cout << " >>> Error: empty fields are not allowed <<< ";
 		return ;
 	}
 	std::cout << "Last name: ";
 	if (!std::getline(std::cin, last_name) || last_name.empty())
 	{
-		std::cout << "Error: empty fields are not allowed";
+		std::cout << " >>> Error: empty fields are not allowed <<< ";
 		return ;
 	}
 	std::cout << "Nickname: ";
 	if (!std::getline(std::cin, nick_name) || nick_name.empty())
 	{
-		std::cout << "Error: empty fields are not allowed";
+		std::cout << " >>> Error: empty fields are not allowed <<< ";
 		return ;
 	}
 	std::cout << "Phone number: ";
 	if (!std::getline(std::cin, phone_nbr) || phone_nbr.empty())
 	{
-		std::cout << "Error: empty fields are not allowed";
+		std::cout << " >>> Error: empty fields are not allowed <<< ";
 		return ;
 	}
 	std::cout << "Darkest secret: ";
 	if (!std::getline(std::cin, darkest_secret) || darkest_secret.empty())
 	{
-		std::cout << "Error: empty fields are not allowed";
+		std::cout << " >>> Error: empty fields are not allowed <<< ";
 	return ;
 	}
 
@@ -64,7 +68,7 @@ void	PhoneBook::addContact()
 	if (contact_counter < 8)
 		contact_counter += 1;
 
-	std::cout << "New contact added successfully\n";
+	std::cout << "\n >>> New contact added successfully <<< \n";
 }
 
 static std::string	truncateInput(std::string const &input);
@@ -77,24 +81,25 @@ void	PhoneBook::searchContact() const
 		return ;
 	}
 
-	std::cout << std::setw(10) << "\nindex" << "|";
+	std::cout << "\n";
+	std::cout << std::setw(10) << "     index" << "|";
 	std::cout << std::setw(10) << "first name" << "|";
-	std::cout << std::setw(10) << "last name" << "|";
-	std::cout << std::setw(10) << "nickname" << "\n";
+	std::cout << std::setw(10) << " last name" << "|";
+	std::cout << std::setw(10) << "  nickname" << "\n";
 
 	for (int i = 0; i < contact_counter; i++)
 	{
 		std::cout << std::setw(10) << i << "|";
 		std::cout << std::setw(10) << truncateInput(contacts[i].getFirstName()) << "|";
 		std::cout << std::setw(10) << truncateInput(contacts[i].getLastName()) << "|";
-		std::cout << std::setw(10) << truncateInput(contacts[i].getNickName()) << "|" << "\n\n";
+		std::cout << std::setw(10) << truncateInput(contacts[i].getNickName()) << "|" << "\n";
 	}
 
 	std::string	input;
-	std::cout << "Enter index: ";
+	std::cout << "\n   enter index: ";
 	if (!getline(std::cin, input) || input.empty())
 	{
-		std::cout << "\nError: no index sent\n";
+		std::cout << "\n >>> Error: no index sent <<< \n";
 		return ;
 	}
 
@@ -103,12 +108,12 @@ void	PhoneBook::searchContact() const
 	std::istringstream	iss(input);
 	if (!(iss >> index) || index < 0 || index >= contact_counter)
 	{
-		std::cout << "\nError: sent invalid index\n --> try again or return to main menu by pressing enter\n";
+		std::cout << "\n >>> Error: sent invalid index\n --> try again or return to main menu by pressing enter <<< \n";
 		three_tries++;
 		if (three_tries == 3)
 		{
 			three_tries = 0;
-			std::cout << "\nError: tried max times, return to main menu\n";
+			std::cout << "\n >>> Error: tried max times, return to main menu <<< \n";
 			return ;
 		}
 		searchContact();
@@ -116,11 +121,11 @@ void	PhoneBook::searchContact() const
 	}
 
 	std::cout << "\n";
-	std::cout << "	First name: " << contacts[index].getFirstName() << "\n";
-	std::cout << "	Last name: " << contacts[index].getLastName() << "\n";
-	std::cout << "	Nickname: " << contacts[index].getNickName() << "\n";
-	std::cout << "	Phone number: " << contacts[index].getPhoneNumber() << "\n";
-	std::cout << "	Darkest secret: " << contacts[index].getDarkestSecret() << "\n\n";
+	std::cout << "First name: " << contacts[index].getFirstName() << "\n";
+	std::cout << "Last name: " << contacts[index].getLastName() << "\n";
+	std::cout << "Nickname: " << contacts[index].getNickName() << "\n";
+	std::cout << "Phone number: " << contacts[index].getPhoneNumber() << "\n";
+	std::cout << "Darkest secret: " << contacts[index].getDarkestSecret() << "\n\n";
 }
 
 static std::string	truncateInput(const std::string& input)

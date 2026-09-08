@@ -11,6 +11,8 @@
 /* ************************************************************************** */
 
 #include "PhoneBook.hpp"
+#include <iostream>
+#include <string>
 
 int	main()
 {
@@ -19,7 +21,7 @@ int	main()
 
 		while (1)
 	{
-		std::cout << "\nADD = add new contact\nSEARCH = search existing contact from PhoneBook\nEXIT = exit the program\n\nwrite your command here: ";
+		std::cout << "\nADD = add new contact\nSEARCH = search existing contact from PhoneBook\nEXIT = exit the program\n\n   write your command here: ";
 		if (!std::getline(std::cin, command))
 			break ;
 		if (command == "ADD")
@@ -29,8 +31,7 @@ int	main()
 		else if (command == "EXIT")
 			break ;
 		else
-			std::cout << "\n >>> Unknown command, write ADD SEARCH or EXIT <<< \n";
+			std::cout << "\n >>> Error: unknown command, write ADD SEARCH or EXIT <<< \n";
 	}
 	return (0);
 }
-//NOTE: todo next is to make sure error and guidance messages are consistent format and clear. also check if I could input colors
