@@ -6,11 +6,11 @@
 #    By: jemustaj <jemustaj@student.42Porto.com>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/09/09 15:52:02 by jemustaj          #+#    #+#              #
-#    Updated: 2026/09/09 16:09:33 by jemustaj         ###   ########.fr        #
+#    Updated: 2026/09/11 12:06:51 by jemustaj         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = zombie
+NAME = moarBrainz
 
 CPP = c++
 CPP_FLAGS = -Wall -Wextra -Werror -std=c++98

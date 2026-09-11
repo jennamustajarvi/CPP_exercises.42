@@ -6,11 +6,11 @@
 #    By: jemustaj <jemustaj@student.42Porto.com>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/09/11 11:30:18 by jemustaj          #+#    #+#              #
-#    Updated: 2026/09/11 11:47:39 by jemustaj         ###   ########.fr        #
+#    Updated: 2026/09/11 12:07:17 by jemustaj         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = memorytest
+NAME = hi_this_is_brain
 
 CPP = c++
 CPP_FLAGS = -Wall -Wextra -Werror -std=c++98
