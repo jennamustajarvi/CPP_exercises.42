@@ -10,22 +10,16 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
-#include <string>
-#include <iostream>
+#include "../include/Zombie.hpp"
 
 int	main(void)
 {
-	Zombie		*zombie = NULL;
-	std::string	name = "kuka";
-	int			N = 0;
+	int			N = 20;
 
-	if (N == 0)
-	{
-		std::cout << "This is a horde, give maaaaany zombies" << std::endl;
+	Zombie	*horde = zombieHorde(N, "4B");
+	if (!horde)
 		return (1);
-	}
-	zombie = zombieHorde(N, name);
-	delete[] zombie;
+	delete[] horde;
+	std::cout << "\n";
 	return (0);
 }

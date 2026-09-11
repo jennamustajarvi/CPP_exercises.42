@@ -10,9 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
-#include <string>
-#include <iostream>
+#include "../include/Zombie.hpp"
 
 Zombie::Zombie()
 {
@@ -30,5 +28,5 @@ void	Zombie::announce(void)
 
 Zombie::~Zombie()
 {
-	std::cout << this->name << " has died" << std::endl;
+	std::cout << this->name << ": has died" << std::endl;
 }

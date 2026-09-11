@@ -18,7 +18,6 @@ CPP_FLAGS = -Wall -Wextra -Werror -std=c++98
 RM = rm -rdf
 
 SRC_DIR = src
-INC_DIR = include
 OBJ_DIR = build
 
 SRC = main.cpp Zombie.cpp zombieHorde.cpp
@@ -32,7 +31,7 @@ $(OBJ_DIR)/$(NAME): $(OBJ)
 
 $(OBJ_DIR)/%.o: $(SRC_DIR)/%.cpp
 	@mkdir -p $(OBJ_DIR)
-	$(CPP) $(CPP_FLAGS) -I$(INC_DIR) -c $< -o $@
+	$(CPP) $(CPP_FLAGS) -c $< -o $@
 
 clean:
 	$(RM) $(OBJ)

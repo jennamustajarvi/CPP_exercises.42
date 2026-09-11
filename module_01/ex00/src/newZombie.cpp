@@ -11,10 +11,16 @@
 /* ************************************************************************** */
 
 #include <string>
+#include <iostream>
 #include "Zombie.hpp"
 
 Zombie* newZombie(std::string name)
 {
-	Zombie	*new_zombie = new Zombie(name);
+	Zombie	*new_zombie = new(std::nothrow) Zombie(name);
+	if (!new_zombie)
+	{
+		std::cout << "Error: memory allcoation failed" << std::endl;
+		return (NULL);
+	}
 	return (new_zombie);
 }
