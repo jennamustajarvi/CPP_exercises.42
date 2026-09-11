@@ -6,7 +6,7 @@
 #    By: jemustaj <jemustaj@student.42Porto.com>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/09/11 12:12:29 by jemustaj          #+#    #+#              #
-#    Updated: 2026/09/11 12:13:10 by jemustaj         ###   ########.fr        #
+#    Updated: 2026/09/11 18:12:25 by jemustaj         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,7 @@ RM = rm -rdf
 SRC_DIR = src
 OBJ_DIR = build
 
-SRC = main.cpp Zombie.cpp zombieHorde.cpp
+SRC = main.cpp HumanA.cpp HumanB.cpp Weapon.cpp
 
 OBJ = $(addprefix $(OBJ_DIR)/, $(SRC:.cpp=.o))
 

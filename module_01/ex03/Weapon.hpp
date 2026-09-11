@@ -6,7 +6,7 @@
 /*   By: jemustaj <jemustaj@student.42Porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/11 12:13:14 by jemustaj          #+#    #+#             */
-/*   Updated: 2026/09/11 12:31:35 by jemustaj         ###   ########.fr       */
+/*   Updated: 2026/09/11 20:45:10 by jemustaj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,8 @@ class	Weapon
 		std::string	type;
 
 	public:
-		Weapon();
-		const std::string&	getType();
+		Weapon(const std::string& type);
+		const std::string&	getType() const;
 		void				setType(const std::string& type);
 		~Weapon();
 };
