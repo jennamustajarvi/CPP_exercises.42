@@ -6,7 +6,7 @@
 /*   By: jemustaj <jemustaj@student.42Porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/11 12:38:00 by jemustaj          #+#    #+#             */
-/*   Updated: 2026/09/11 17:51:20 by jemustaj         ###   ########.fr       */
+/*   Updated: 2026/09/11 23:14:44 by jemustaj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,13 @@ class	HumanB
 {
 	private:
 		std::string	name;
+		Weapon		*weapon;
 
 	public:
-		void	attack(const std::string &name);
+		HumanB(const std::string& name);
+		void	setWeapon(Weapon& weapon);
+		void	attack();
+		~HumanB();
 };
 
 #endif
