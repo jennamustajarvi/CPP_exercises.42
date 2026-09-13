@@ -11,8 +11,8 @@
 /* ************************************************************************** */
 
 #include <string>
-#include <fstream>
 #include <iostream>
+#include <fstream>
 #include <sstream>
 
 std::string replace_s1(const std::string &file_content, const std::string &s1, const std::string &s2);
@@ -56,9 +56,9 @@ int	main(int ac, char **av)
 		std::cout << "Error: not able to create a new file" << "\n";
 		return (1);
 	}
+
 	new_file << res;
 	new_file.close();
-
 	return (0);
 }
 

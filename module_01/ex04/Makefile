@@ -42,7 +42,7 @@ fclean: clean
 re: fclean all
 
 test: all
-	chmod 777 tests.sh
-	./tests.sh
+	@chmod 777 tests.sh
+	@./tests.sh
 
 .PHONY: all clean fclean re test
