@@ -6,11 +6,12 @@
 /*   By: jemustaj <jemustaj@student.42Porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/09 16:09:37 by jemustaj          #+#    #+#             */
-/*   Updated: 2026/09/12 23:20:57 by jemustaj         ###   ########.fr       */
+/*   Updated: 2026/09/13 19:33:34 by jemustaj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/Zombie.hpp"
+#include <iostream>
 
 Zombie* zombieHorde(int N, std::string name)
 {

@@ -6,7 +6,7 @@
 /*   By: jemustaj <jemustaj@student.42Porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/08 19:11:43 by jemustaj          #+#    #+#             */
-/*   Updated: 2026/09/08 22:15:12 by jemustaj         ###   ########.fr       */
+/*   Updated: 2026/09/13 19:32:10 by jemustaj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ class Zombie
 	public:
 		Zombie(std::string name);
 		void	announce(void);
-		~Zombie();
+		~Zombie(void);
 
 	private:
 		std::string	name;
