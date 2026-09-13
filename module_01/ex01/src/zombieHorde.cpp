@@ -6,7 +6,7 @@
 /*   By: jemustaj <jemustaj@student.42Porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/09 16:09:37 by jemustaj          #+#    #+#             */
-/*   Updated: 2026/09/10 15:10:05 by jemustaj         ###   ########.fr       */
+/*   Updated: 2026/09/12 23:20:57 by jemustaj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,13 +16,13 @@ Zombie* zombieHorde(int N, std::string name)
 {
 	if (N <= 0)
 	{
-		std::cout << "Error: invalid amount of zombies, give more than 0" << std::endl;
+		std::cerr << "Error: invalid amount of zombies, give more than 0" << "\n";
 		return (NULL);
 	}
 	Zombie *zombie = new(std::nothrow) Zombie[N];
 	if (!zombie)
 	{
-		std::cout << "Error: memory allocation failed" << std::endl;
+		std::cerr << "Error: memory allocation failed" << "\n";
 		return (NULL);
 	}
 	std::cout << "\n";
