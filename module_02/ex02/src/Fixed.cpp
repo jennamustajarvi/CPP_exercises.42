@@ -6,7 +6,7 @@
 /*   By: jemustaj <jemustaj@student.42Porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/14 10:06:21 by jemustaj          #+#    #+#             */
-/*   Updated: 2026/09/14 21:57:37 by jemustaj         ###   ########.fr       */
+/*   Updated: 2026/09/14 22:15:28 by jemustaj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,12 +71,12 @@ void	Fixed::setRawBits(const int raw)
 /*	Transform raw bits Back to INT and FLOAT	*/
 int	Fixed::toInt(void) const
 {
-	return (this->_fixedPointValue >> this->_fractBits);
+	return (this->_fixedPointValue >> _fractBits);
 }
 
 float Fixed::toFloat(void) const
 {
-	return ((float)this->_fixedPointValue / (1 << this->_fractBits));
+	return ((float)this->_fixedPointValue / (1 << _fractBits));
 }
 
 
