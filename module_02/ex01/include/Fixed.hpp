@@ -6,7 +6,7 @@
 /*   By: jemustaj <jemustaj@student.42Porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/14 10:05:29 by jemustaj          #+#    #+#             */
-/*   Updated: 2026/09/14 11:52:47 by jemustaj         ###   ########.fr       */
+/*   Updated: 2026/09/14 18:43:48 by jemustaj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,8 +27,8 @@ class Fixed
 
 		int		getRawBits(void) const;
 		void	setRawBits(const int raw);
-		float	toFloat(void) const;
 		int		toInt(void) const;
+		float	toFloat(void) const;
 
 	private:
 		int					_fixedPointValue;
