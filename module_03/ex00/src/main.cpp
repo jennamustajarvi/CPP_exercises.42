@@ -20,26 +20,26 @@ int	main(void)
 	std::cout << "\n";
 
 	std::cout << "Create player 1" << std::endl;
-	ClapTrap p1("p1");
-	p1.attack("target");
-	p1.takeDamage(5);
-	p1.takeDamage(5);
-	p1.beRepaired(1);
+	ClapTrap clap("Clap");
+	clap.attack("target");
+	clap.takeDamage(5);
+	clap.takeDamage(5);
+	clap.beRepaired(1);
 	std::cout << "Player 1 has survived" << std::endl;
 	std::cout << "\n";
 
 	std::cout << "Create player 2" << std::endl;
-	ClapTrap p2("p2");
+	ClapTrap trap("trap");
 	for (int i = 0; i < 11; i++)
-		p2.attack("target");
+		trap.attack("target");
 	std::cout << "\n";
 	
 	std::cout << "Create player 3" << std::endl;
-	ClapTrap p3("p3");
+	ClapTrap claptrap("claptrap");
 	for (int i = 0; i < 11; i++)
 	{
-		p3.attack("target");
-		p3.beRepaired(1);
+		claptrap.attack("target");
+		claptrap.beRepaired(1);
 	}
 	std::cout << "\n";
 
