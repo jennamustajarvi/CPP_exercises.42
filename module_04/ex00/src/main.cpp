@@ -10,3 +10,13 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "../include/Animal.hpp"
+#include <iostream>
+
+int	main(void)
+{
+	std::cout << "CREATE ANIMAL" << std::endl;
+	Animal	A(void);
+
+	return(0);
+}
