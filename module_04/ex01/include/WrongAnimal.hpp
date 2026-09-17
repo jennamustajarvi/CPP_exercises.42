@@ -1,33 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Brain.hpp                                          :+:      :+:    :+:   */
+/*   WrongAnimal.hpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jemustaj <jemustaj@student.42Porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/09/16 11:30:41 by jemustaj          #+#    #+#             */
-/*   Updated: 2026/09/16 11:30:42 by jemustaj         ###   ########.fr       */
+/*   Created: 2026/09/16 11:20:56 by jemustaj          #+#    #+#             */
+/*   Updated: 2026/09/16 11:20:57 by jemustaj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef BRAIN_HPP
-#define BRAIN_HPP
+#ifndef WRONGANIMAL_HPP
+#define WRONGANIMAL_HPP
 
 #include <string>
 
-class Brain
+class WrongAnimal
 {
 	public:
-		Brain(void);
-		Brain(const Brain& other);
-		Brain& operator=(const Brain& other);
-		~Brain(void);
+		WrongAnimal(void);
+		WrongAnimal(const WrongAnimal& other);
+		WrongAnimal& operator=(const WrongAnimal& other);
+		~WrongAnimal(void);
 
-		std::string	getIdeas(unsigned int i) const;
-		void	setIdeas(unsigned int i, const std::string& idea);
+		std::string	getType(void) const;
+		void		makeSound(void) const;
 
-	private:
-		std::string _ideas[100];
+	protected:
+		std::string	_type;
 };
 
 #endif

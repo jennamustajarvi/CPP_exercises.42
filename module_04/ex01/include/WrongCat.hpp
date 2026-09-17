@@ -1,33 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Brain.hpp                                          :+:      :+:    :+:   */
+/*   WrongCat.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jemustaj <jemustaj@student.42Porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/09/16 11:30:41 by jemustaj          #+#    #+#             */
-/*   Updated: 2026/09/16 11:30:42 by jemustaj         ###   ########.fr       */
+/*   Created: 2026/09/16 11:20:59 by jemustaj          #+#    #+#             */
+/*   Updated: 2026/09/16 11:21:00 by jemustaj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef BRAIN_HPP
-#define BRAIN_HPP
+#ifndef WRONGCAT_HPP
+#define WRONGCAT_HPP
 
-#include <string>
+#include "WrongAnimal.hpp"
+#include "Brain.hpp"
 
-class Brain
+class WrongCat : public WrongAnimal
 {
 	public:
-		Brain(void);
-		Brain(const Brain& other);
-		Brain& operator=(const Brain& other);
-		~Brain(void);
+		WrongCat(void);
+		WrongCat(const WrongCat& other);
+		WrongCat& operator=(const WrongCat& other);
+		~WrongCat(void);
 
-		std::string	getIdeas(unsigned int i) const;
-		void	setIdeas(unsigned int i, const std::string& idea);
+		void	makeSound(void) const;
+		Brain*	getBrain(void) const;
 
 	private:
-		std::string _ideas[100];
+		Brain*	_brain;
 };
 
 #endif

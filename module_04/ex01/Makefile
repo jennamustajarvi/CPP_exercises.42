@@ -10,7 +10,7 @@
 #                                                                              #
 # **************************************************************************** #
 
-NAME = brain
+NAME = add_brains
 
 CPP = c++
 CPP_FLAGS = -Wall -Wextra -Werror -std=c++98
