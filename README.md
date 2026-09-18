@@ -1,6 +1,6 @@
 _This project has been created as part of the 42 curriculum by jemustaj_
 
-# C++ EXERCISES - my first steps of c++
+# C++ EXERCISES - my first steps of cpp
 
 #### Table of contents
 
