@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: jemustaj <jemustaj@student.42Porto.com>    +#+  +:+       +#+         #
+#    By: jennamustajarvi <jennamustajarvi@studen    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/09/16 11:31:44 by jemustaj          #+#    #+#              #
-#    Updated: 2026/09/16 11:32:04 by jemustaj         ###   ########.fr        #
+#    Updated: 2026/09/18 19:11:06 by jennamustaj      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,7 @@ RM = rm -rdf
 SRC_DIR = src
 OBJ_DIR = build
 
-SRC = main.cpp Animal.cpp Brain.cpp Cat.cpp Dog.cpp
+SRC = main.cpp Animal.cpp Brain.cpp Cat.cpp Dog.cpp WrongAnimal.cpp WrongCat.cpp
 
 OBJ = $(addprefix $(OBJ_DIR)/, $(SRC:.cpp=.o))
 

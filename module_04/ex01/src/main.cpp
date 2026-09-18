@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jemustaj <jemustaj@student.42Porto.com>    +#+  +:+       +#+        */
+/*   By: jennamustajarvi <jennamustajarvi@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/16 11:31:04 by jemustaj          #+#    #+#             */
-/*   Updated: 2026/09/16 11:31:05 by jemustaj         ###   ########.fr       */
+/*   Updated: 2026/09/18 18:54:08 by jennamustaj      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -115,10 +115,10 @@ int	main(void)
 	std::cout << wc->getType() << " " << std::endl;
 	std::cout << "\n";
 	wa->makeSound();
-	wc->makeSound(); //will not output the cat sound!
+	wc->makeSound();
 	std::cout << "\n";
 	delete wa;
-	delete wc; //might cause a memory leak becasue cat is never destructed
+	delete wc;
 	std::cout << "\n";
 	std::cout << "\n";
 

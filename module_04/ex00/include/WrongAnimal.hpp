@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   WrongAnimal.hpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jemustaj <jemustaj@student.42Porto.com>    +#+  +:+       +#+        */
+/*   By: jennamustajarvi <jennamustajarvi@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/16 11:20:56 by jemustaj          #+#    #+#             */
-/*   Updated: 2026/09/16 11:20:57 by jemustaj         ###   ########.fr       */
+/*   Updated: 2026/09/18 18:49:59 by jennamustaj      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ class WrongAnimal
 		WrongAnimal(void);
 		WrongAnimal(const WrongAnimal& other);
 		WrongAnimal& operator=(const WrongAnimal& other);
-		~WrongAnimal(void);
+		virtual ~WrongAnimal(void);
 
 		std::string	getType(void) const;
 		void		makeSound(void) const;

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jemustaj <jemustaj@student.42Porto.com>    +#+  +:+       +#+        */
+/*   By: jennamustajarvi <jennamustajarvi@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/16 11:31:42 by jemustaj          #+#    #+#             */
-/*   Updated: 2026/09/16 11:31:43 by jemustaj         ###   ########.fr       */
+/*   Updated: 2026/09/18 19:10:29 by jennamustaj      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 #include "../include/Cat.hpp"
 #include "../include/Dog.hpp"
 #include "../include/Brain.hpp"
+#include "../include/WrongAnimal.hpp"
+#include "../include/WrongCat.hpp"
 #include <iostream>
 
 int    main(void)
@@ -103,7 +105,22 @@ int    main(void)
     std::cout << "assign_cat idea: " << assign_cat.getBrain()->getIdeas(0) << std::endl;
     std::cout << "\n";
     std::cout << "\n";
+    
+	std::cout << ">>>>>>> WRONG ANIMAL TEST <<<<<<<" << std::endl;
+	const WrongAnimal* wa = new WrongAnimal();
+	const WrongAnimal* wc = new WrongCat();
+	std::cout << "\n";
 
+	std::cout << wa->getType() << " " << std::endl;
+	std::cout << wc->getType() << " " << std::endl;
+	std::cout << "\n";
+	wa->makeSound();
+	wc->makeSound();
+	std::cout << "\n";
+	delete wa;
+	delete wc;
+	std::cout << "\n";
+	std::cout << "\n";
     /*std::cout << ">>>>>>> TEST THAT ANIMAL IS ABSTRACT <<<<<<<" << std::endl;
     Animal abstract_animal;
     std::cout << "\n";*/
